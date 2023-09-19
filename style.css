@@ -1,0 +1,65 @@
+body {
+    background-image: url('hello-world-.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: aqua;
+}
+
+.name {
+    float: left;
+}
+
+.links {
+    float: right;
+}
+
+header::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+header {
+    font-size: 2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: .5em 1em;
+    box-shadow: 0 2px 4px -2px black;
+}
+
+section>img {
+    height: 128px;
+}
+
+a {
+    color: lightpink;
+}
+
+a:hover {
+    color: lightcoral;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 800px;
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 0px 0px 20px 40px;
+}
+
+.grid-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: 10px dotted rgb(255, 85, 0);
+    border-radius: 100%;
+    font-size: 40px;
+    padding: 0px 0px 70px 40px;
+}
